@@ -1,6 +1,6 @@
 Name: harbour-warsawbus
-Summary: Warsaw Buses
-Version: 0.1
+Summary: Warsaw Bus
+Version: 0.2
 Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
@@ -13,7 +13,7 @@ License: LICENSE
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Short description of my Sailfish OS Application
+  Warsaw Bus timetable viewer
 Builder: qmake5
 
 # This section specifies build dependencies that are resolved using pkgconfig.

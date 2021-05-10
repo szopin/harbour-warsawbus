@@ -25,7 +25,7 @@ Page {
 
             Label {
                 id: appName
-                text: "WarsawBus"
+                text: "Warsaw Bus"
                 anchors.top: appIcon.bottom
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.family: Theme.fontFamily
@@ -44,7 +44,7 @@ Page {
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.primaryColor
                 wrapMode: Text.Wrap
-                text: "Warsaw Bus timetable viewer for Sailfish OS v0.1\nBy szopin\nLicensed under MIT";
+                text: "Warsaw Bus timetable viewer for Sailfish OS v0.2\nBy szopin\nLicensed under MIT";
             }
 
             Button {

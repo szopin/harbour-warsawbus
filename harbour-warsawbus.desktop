@@ -3,7 +3,7 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-warsawbus
 Exec=sailfish-qml harbour-warsawbus
-Name=harbour-warsawbus
+Name=Warsaw Bus
 # translation example:
 # your app name in German locale (de)
 #
