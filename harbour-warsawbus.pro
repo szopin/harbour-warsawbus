@@ -18,6 +18,7 @@ DISTFILES += qml/harbour-warsawbus.qml \
     qml/cover/CoverPage.qml \
     qml/pages/AboutPage.qml \
     qml/pages/FirstPage.qml \
+    qml/pages/Map.qml \
     qml/pages/SecondPage.qml \
     qml/pages/ThirdPage.qml \
     rpm/harbour-warsawbus.changes.in \

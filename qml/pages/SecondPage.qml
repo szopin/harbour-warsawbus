@@ -10,6 +10,8 @@ Page {
     property string slupek
     property string kierunek
     property string zespol
+    property string szer
+    property string dlug
     property string pagetitle: title + " " + slupek + " " + kierunek
     property string combined: "https://api.um.warszawa.pl/api/action/dbtimetable_get/?id=88cd555f-6f31-43ca-9de4-66c479ad5942&busstopId=" + zespol + "&busstopNr=" + slupek + "&apikey=8c2d8817-cd66-4785-a25f-777b58b5ae94"
 
@@ -45,6 +47,13 @@ Page {
         header: PageHeader {
             title: pagetitle
         }
+        PullDownMenu {
+                    id: menu
+                    MenuItem {
+                        text: "See stop on map"
+                        onClicked: pageStack.push("Map.qml", { tit: title + " " + slupek, "szer": szer, "dlug": dlug});
+                    }
+                }
         anchors.top: header.bottom
         width: parent.width
         height: parent.height

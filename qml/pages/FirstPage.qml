@@ -40,7 +40,7 @@ Page {
 
                 for (var i=0;i<data.result.length;i++) {
 
-                    list.model.append({title: data.result[i].values[2].value, zespol: data.result[i].values[0].value, kierunek: data.result[i].values[6].value, slupek: data.result[i].values[1].value});
+                    list.model.append({title: data.result[i].values[2].value, zespol: data.result[i].values[0].value, kierunek: data.result[i].values[6].value, slupek: data.result[i].values[1].value, szer: data.result[i].values[4].value, dlug: data.result[i].values[5].value});
 
                 }
             }
@@ -134,7 +134,7 @@ Page {
                 anchors.fill: parent
                 onClicked: {
                     var name = list.model.get(index).name
-                    pageStack.push("SecondPage.qml", {"zespol": zespol, "slupek": slupek, "title": title, "kierunek": kierunek});//, "url": link, "snTitle": title, "discussion": discussion, "commentcount": commentcount });
+                    pageStack.push("SecondPage.qml", {"zespol": zespol, "slupek": slupek, "title": title, "kierunek": kierunek, "szer": szer, "dlug": dlug});//, "url": link, "snTitle": title, "discussion": discussion, "commentcount": commentcount });
 
                 }
             }
