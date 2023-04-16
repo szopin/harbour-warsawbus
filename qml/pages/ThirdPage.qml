@@ -8,6 +8,8 @@ Page {
     property int count
     property string linia
     property string czas
+    property string dlug
+    property string szer
     property string symbol1
     property string symbol2
     property string combine
@@ -21,7 +23,6 @@ Page {
     function updatelist(){
         var xhr = new XMLHttpRequest;
         xhr.open("GET", combined);
-        console.log(combined);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 var data = JSON.parse(xhr.responseText);
@@ -78,6 +79,13 @@ Page {
         width: parent.width
         height: parent.height
 
+        PullDownMenu {
+            id: menu
+            MenuItem {
+                text: "See " + (linia.length > 2 ? "buses " : "trams ") + "on map"
+                onClicked: pageStack.push("Map.qml", { tit: title + " " + slupek, "szer": szer, "dlug": dlug, "linia": linia});
+            }
+        }
 
         VerticalScrollDecorator {}
         model: ListModel { id: model}

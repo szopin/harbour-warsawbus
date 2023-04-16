@@ -20,7 +20,7 @@ Page {
     }
 
     function search(filter){
-        console.log(model.count);
+
         for (var j=0; j < model.count; j++){
             if (model.get(j).title.toLowerCase().indexOf(filter) >= 0){
                 searchModel.append(model.get(j))

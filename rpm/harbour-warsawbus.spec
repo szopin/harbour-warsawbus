@@ -9,7 +9,7 @@ Name:       harbour-warsawbus
 # << macros
 
 Summary:    Warsaw Bus
-Version:    0.3
+Version:    0.4
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE

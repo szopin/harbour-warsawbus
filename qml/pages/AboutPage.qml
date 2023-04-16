@@ -44,7 +44,7 @@ Page {
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.primaryColor
                 wrapMode: Text.Wrap
-                text: "Warsaw Bus timetable viewer for Sailfish OS v0.3\nBy szopin\nLicensed under MIT";
+                text: "Warsaw Bus timetable viewer for Sailfish OS v0.4\nBy szopin\nLicensed under MIT";
             }
 
             Button {
