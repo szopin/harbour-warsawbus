@@ -24,7 +24,6 @@ DISTFILES += qml/harbour-warsawbus.qml \
     rpm/harbour-warsawbus.changes.in \
     rpm/harbour-warsawbus.changes.run.in \
     rpm/harbour-warsawbus.spec \
-    rpm/harbour-warsawbus.yaml \
     translations/*.ts \
     harbour-warsawbus.desktop
 

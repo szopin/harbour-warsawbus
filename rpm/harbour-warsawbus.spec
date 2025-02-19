@@ -9,7 +9,7 @@ Name:       harbour-warsawbus
 # << macros
 
 Summary:    Warsaw Bus
-Version:    0.4
+Version:    0.5
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE
@@ -19,6 +19,8 @@ Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-warsawbus.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   libsailfishapp-launcher
+Requires:   qt5-qtdeclarative-import-location
+Requires:   qt5-qtlocation
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.3
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
